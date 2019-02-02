@@ -24,8 +24,39 @@ app.post('/webhook', middleware(config), (req, res) => {
     //   type: 'text',
     //   text: message.type // change from message to message.text
     // });
-    client.replyMessage(event.replyToken, 
-      {
+    // client.replyMessage(event.replyToken, 
+    //   {
+    //     "type": "template",
+    //     "altText": "This is a buttons template",
+    //     "template": {
+    //         "type": "buttons",
+    //         "thumbnailImageUrl": "https://www.igeargeek.com/wp-content/uploads/2018/10/ED9AD8D7-06FA-478A-8F2A-1F4BB62157AA.jpg",
+    //         "imageAspectRatio": "rectangle",
+    //         "imageSize": "cover",
+    //         "imageBackgroundColor": "#FFFFFF",
+    //         "title": "Menu",
+    //         "text": "Please select",
+    //         "defaultAction": {
+    //             "type": "uri",
+    //             "label": "View detail",
+    //             "uri": "http://google.com/"
+    //         },
+    //         "actions": [
+    //             {
+    //               "type": "uri",
+    //               "label": "facebook",
+    //               "uri": "https://fb.me"
+    //             },
+    //             {
+    //               "type": "uri",
+    //               "label": "cpe",
+    //               "uri": "https://fb.me"
+    //             }
+    //         ]
+    //     }
+    //   })
+
+    client.replyMessage(event.replyToken, {
         "type": "template",
         "altText": "this is a carousel template",
         "template": {
@@ -72,7 +103,7 @@ app.post('/webhook', middleware(config), (req, res) => {
             "imageAspectRatio": "rectangle",
             "imageSize": "cover"
         }
-      })
+    })
   }
 })
 
