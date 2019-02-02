@@ -30,7 +30,7 @@ app.post('/webhook', middleware(config), (req, res) => {
         "altText": "This is a buttons template",
         "template": {
             "type": "buttons",
-            "thumbnailImageUrl": "https://vignette.wikia.nocookie.net/line/images/b/bb/2015-brown.png/revision/latest?cb=20150808131630",
+            "thumbnailImageUrl": "https://www.igeargeek.com/wp-content/uploads/2018/10/ED9AD8D7-06FA-478A-8F2A-1F4BB62157AA.jpg",
             "imageAspectRatio": "rectangle",
             "imageSize": "cover",
             "imageBackgroundColor": "#FFFFFF",
