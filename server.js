@@ -12,11 +12,9 @@ const client = new Client(config)
 
 app.get('/', function (req, res) {
     res.send('Hello World!!')
-
 })
 
 app.post('/webhook', middleware(config), (req, res) => {
-  res.send('asdasd')
   const event = req.body.events[0];
 
   if (event.type === 'message') {
