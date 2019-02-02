@@ -25,8 +25,6 @@ app.post('/webhook', middleware(config), (req, res) => {
       text: message.text // change from message to message.text
     });
 
-  }else{
-    res.send("dsdasd")
   }
 })
 
