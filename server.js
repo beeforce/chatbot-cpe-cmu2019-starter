@@ -12,7 +12,7 @@ app.get('/', function (req, res) {
 })
 
 app.post('/webhook', middleware(config), (req, res) => {
-  console.log('webhook success')
+  res.send('asdasd')
 })
 
 app.set('port', (process.env.PORT || 4000))
