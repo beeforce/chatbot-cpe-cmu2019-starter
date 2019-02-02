@@ -2,7 +2,6 @@ const express = require('express')
 const line = require('@line/bot-sdk')
 const restClient = new (require('node-rest-client').Client)
 
-require('dotenv').config()
 const app = express()
 
 const config = {
